@@ -1,0 +1,473 @@
+//variable
+
+$black-color: black;
+$white-color: white;
+$secondary-color: #ffae13;
+$terciaire-color: #151515;
+$font-title: "Amatic SC", cursive;
+$font-text: "Lato", sans-serif;
+$font-under-title: "Berkshire Swash", cursive;
+$color-link-header: #bdbdbd;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $black-color;
+  font-family: $font-text;
+  line-height: 1.5;
+  font-size: 1rem;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.block {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.width {
+  width: 100%;
+}
+
+.hideMenuBurgerHeader {
+  height: 0;
+  overflow: hidden;
+  transition: 0.25s;
+}
+
+.showMenuBurgerHeader {
+  height: 100%;
+  transition: 0.25s;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+header {
+  background-color: $black-color;
+  nav {
+    &:first-of-type {
+      border-bottom: 1px solid #1c1c1c;
+    }
+    .contactHeader {
+      display: none;
+    }
+    .media {
+      justify-content: space-around;
+      max-width: 300px;
+      margin: 0 auto;
+      li {
+        a {
+          color: $color-link-header;
+          font-size: 0.75rem;
+          font-weight: 600;
+          transition: color 0.25s ease;
+          &:hover {
+            color: $white-color;
+          }
+        }
+      }
+    }
+    &:last-of-type {
+      div.gutenberg {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        img {
+          height: 100%;
+        }
+        div.activeMenuBurgerHeader {
+          height: 19px;
+          width: 25px;
+          cursor: pointer;
+          span,
+          span::after,
+          span::before {
+            position: absolute;
+            content: "";
+            display: inline-block;
+            width: 25px;
+            height: 3px;
+            background-color: $white-color;
+          }
+          span {
+            &::before {
+              top: 8px;
+            }
+            &::after {
+              top: 16px;
+            }
+          }
+          &:hover {
+            span,
+            span::after,
+            span::before {
+              background-color: $color-link-header;
+            }
+          }
+        }
+        .menuBurgerHeader {
+          background-color: $black-color;
+          width: 100%;
+          flex-direction: column;
+          li.firstMenu {
+            color: $white-color;
+            a {
+              padding: 1rem;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              color: $white-color;
+              position: relative;
+              transition: all 0.25s ease;
+              &::after {
+                content: "";
+                height: 2px;
+                position: absolute;
+                background: linear-gradient(
+                  90deg,
+                  $secondary-color 70%,
+                  transparent 0
+                );
+                opacity: 0;
+                background-size: 8px 100%;
+                transition: all 0.3s;
+                top: 45px;
+                left: 50%;
+                right: 50%;
+                margin: 0 1rem;
+              }
+            }
+            &:hover {
+              > a {
+                color: $secondary-color;
+                &::after {
+                  opacity: 1;
+                  background-size: 8px 100%;
+                  left: 0%;
+                  right: 0%;
+                }
+              }
+            }
+            ul {
+              li {
+                ul {
+                  padding: 0 1rem;
+                }
+              }
+            }
+          }
+          .otherMenu {
+            background-color: $terciaire-color;
+            a {
+              &:hover {
+                color: $secondary-color;
+              }
+            }
+          }
+        }
+        > div {
+          padding: 1.7rem 1rem;
+          justify-content: space-between;
+          display: flex;
+          width: 100%;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+.bookOnly {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: $font-title;
+  font-size: 28px;
+  border-radius: 100px;
+  height: 7rem;
+  background-color: $secondary-color;
+  position: relative;
+  margin: 3rem auto 0 auto;
+  width: 7rem;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.25s;
+  text-align: center;
+  &::before {
+    content: "";
+    display: block;
+    transform: scale(1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 100px;
+    transition: 0.25s;
+    background-color: $white-color;
+  }
+  &:hover {
+    &::before {
+      transform: scale(0);
+    }
+    &::after {
+      transform: translate(-50%, -50%) rotate(100deg);
+    }
+  }
+  span {
+    position: relative;
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border: 2px dashed $white-color;
+    position: absolute;
+    border-radius: 100px;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    padding: 1rem;
+    transition: 0.25s;
+  }
+}
+
+main {
+  .craftBeer {
+    background-image: url(https://ld-wp.template-help.com/wordpress_59005/wp-content/uploads/2016/09/index-1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+    > div {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    h1 {
+      line-height: 1;
+      margin: 0;
+      color: $white-color;
+      text-align: center;
+      font-family: $font-title;
+      font-size: 150px;
+      .orange {
+        color: $secondary-color;
+      }
+    }
+    p {
+      &:first-of-type {
+        margin: 0;
+        color: $white-color;
+        font-size: 3rem;
+        text-align: center;
+        font-family: $font-title;
+      }
+    }
+    div {
+      &:first-of-type {
+        .best {
+          font-size: 3rem;
+        }
+      }
+      &:last-of-type {
+        margin-top: -2rem;
+      }
+    }
+    div {
+      .orange {
+        text-align: center;
+        font-size: 3rem;
+        font-family: $font-title;
+        color: $secondary-color;
+        margin-top: 1.5rem;
+      }
+      p {
+        &:first-of-type,
+        &:last-of-type,
+        &:nth-of-type(2) {
+          font-family: $font-text;
+          font-size: 28px;
+          text-align: center;
+        }
+        &:last-of-type {
+          font-family: $font-title;
+        }
+        a {
+          color: $white-color;
+          transition: 0.25s;
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+    .call {
+      color: white;
+      margin: 0;
+    }
+  }
+  .parternship {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    padding: 45px 0;
+    flex-direction: column;
+    div {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      margin-bottom: 45px;
+      img {
+        width: 13rem;
+      }
+      a {
+        text-transform: capitalize;
+        font-size: 18px;
+        margin-top: 1rem;
+        transition: 0.25s;
+        color: $black-color;
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+  .listProduct {
+    max-width: 500px;
+    margin: 0 auto;
+    h2 {
+      text-align: center;
+      font-family: $font-under-title;
+      font-size: 3rem;
+      font-weight: normal;
+      text-transform: capitalize;
+    }
+    div {
+      margin: 6rem 0;
+      &:last-of-type {
+        padding-top: 3rem;
+        a {
+          margin: 0;
+        }
+        img {
+          margin-bottom: 2rem;
+          transition: 0.4s;
+        }
+        &:hover {
+          img {
+            transform: translateY(-30px);
+          }
+        }
+      }
+      a {
+        font-family: $font-title;
+        color: $black-color;
+        font-size: 5rem;
+        font-weight: 100;
+        display: block;
+        text-align: center;
+        margin-top: -4rem;
+        transition: 0.25s;
+        position: relative;
+        z-index: 1000;
+      }
+      img {
+        display: block;
+        width: 13rem;
+        margin: 0 auto;
+        transition: 0.5s;
+      }
+      &:hover {
+        img {
+          transform: translateY(-10px);
+        }
+        a {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+  .moreInformation {
+    background-image: url(https://ld-wp.template-help.com/wordpress_59005/wp-content/uploads/2016/09/index-9.jpg);
+      background-position: top center;
+      background-size: cover;
+      color: $white-color;
+      height: 780px;
+    > div {
+      max-width: 350px;
+      margin: 0 auto;
+      p {
+        &:first-of-type {
+          text-align: center;
+          padding: 2rem 0;
+          margin: 0;
+          font-size: 2rem;
+          text-transform: capitalize;
+          font-family: $font-under-title;
+        }
+        text-align: center;
+      }
+      .aboutGutenberg {
+        width: 9rem;
+        height: 9rem;
+      }
+      h3 {
+        font-weight: normal;
+        font-size: 3rem;
+        text-align: center;
+        margin: 0;
+        line-height: 1;
+      }
+      ul {
+        li {
+          text-align: center;
+          &:last-of-type {
+            padding-left: 4.8rem;
+          }
+          i {
+            margin-right: 1rem;
+            font-size: .6rem;
+          }
+        }
+      }
+    }
+  }
+}

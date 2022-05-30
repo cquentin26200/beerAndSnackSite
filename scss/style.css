@@ -1,0 +1,544 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: black;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.block {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.width {
+  width: 100%;
+}
+
+.hideMenuBurgerHeader {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.showMenuBurgerHeader {
+  height: 100%;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+header {
+  background-color: black;
+}
+
+header nav:first-of-type {
+  border-bottom: 1px solid #1c1c1c;
+}
+
+header nav .contactHeader {
+  display: none;
+}
+
+header nav .media {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+header nav .media li a {
+  color: #bdbdbd;
+  font-size: 0.75rem;
+  font-weight: 600;
+  -webkit-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+
+header nav .media li a:hover {
+  color: white;
+}
+
+header nav:last-of-type div.gutenberg {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header nav:last-of-type div.gutenberg img {
+  height: 100%;
+}
+
+header nav:last-of-type div.gutenberg div.activeMenuBurgerHeader {
+  height: 19px;
+  width: 25px;
+  cursor: pointer;
+}
+
+header nav:last-of-type div.gutenberg div.activeMenuBurgerHeader span,
+header nav:last-of-type div.gutenberg div.activeMenuBurgerHeader span::after,
+header nav:last-of-type div.gutenberg div.activeMenuBurgerHeader span::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+header nav:last-of-type div.gutenberg div.activeMenuBurgerHeader span::before {
+  top: 8px;
+}
+
+header nav:last-of-type div.gutenberg div.activeMenuBurgerHeader span::after {
+  top: 16px;
+}
+
+header nav:last-of-type div.gutenberg div.activeMenuBurgerHeader:hover span,
+header nav:last-of-type div.gutenberg div.activeMenuBurgerHeader:hover span::after,
+header nav:last-of-type div.gutenberg div.activeMenuBurgerHeader:hover span::before {
+  background-color: #bdbdbd;
+}
+
+header nav:last-of-type div.gutenberg .menuBurgerHeader {
+  background-color: black;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header nav:last-of-type div.gutenberg .menuBurgerHeader li.firstMenu {
+  color: white;
+}
+
+header nav:last-of-type div.gutenberg .menuBurgerHeader li.firstMenu a {
+  padding: 1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  position: relative;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+header nav:last-of-type div.gutenberg .menuBurgerHeader li.firstMenu a::after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, color-stop(70%, #ffae13), color-stop(0, transparent));
+  background: linear-gradient(90deg, #ffae13 70%, transparent 0);
+  opacity: 0;
+  background-size: 8px 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  top: 45px;
+  left: 50%;
+  right: 50%;
+  margin: 0 1rem;
+}
+
+header nav:last-of-type div.gutenberg .menuBurgerHeader li.firstMenu:hover > a {
+  color: #ffae13;
+}
+
+header nav:last-of-type div.gutenberg .menuBurgerHeader li.firstMenu:hover > a::after {
+  opacity: 1;
+  background-size: 8px 100%;
+  left: 0%;
+  right: 0%;
+}
+
+header nav:last-of-type div.gutenberg .menuBurgerHeader li.firstMenu ul li ul {
+  padding: 0 1rem;
+}
+
+header nav:last-of-type div.gutenberg .menuBurgerHeader .otherMenu {
+  background-color: #151515;
+}
+
+header nav:last-of-type div.gutenberg .menuBurgerHeader .otherMenu a:hover {
+  color: #ffae13;
+}
+
+header nav:last-of-type div.gutenberg > div {
+  padding: 1.7rem 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bookOnly {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Amatic SC", cursive;
+  font-size: 28px;
+  border-radius: 100px;
+  height: 7rem;
+  background-color: #ffae13;
+  position: relative;
+  margin: 3rem auto 0 auto;
+  width: 7rem;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  text-align: center;
+}
+
+.bookOnly::before {
+  content: "";
+  display: block;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 100px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  background-color: white;
+}
+
+.bookOnly:hover::before {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.bookOnly:hover::after {
+  -webkit-transform: translate(-50%, -50%) rotate(100deg);
+          transform: translate(-50%, -50%) rotate(100deg);
+}
+
+.bookOnly span {
+  position: relative;
+}
+
+.bookOnly::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border: 2px dashed white;
+  position: absolute;
+  border-radius: 100px;
+  height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  padding: 1rem;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+main .craftBeer {
+  background-image: url(https://ld-wp.template-help.com/wordpress_59005/wp-content/uploads/2016/09/index-1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 70px 0;
+}
+
+main .craftBeer > div {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+main .craftBeer h1 {
+  line-height: 1;
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  font-size: 150px;
+}
+
+main .craftBeer h1 .orange {
+  color: #ffae13;
+}
+
+main .craftBeer p:first-of-type {
+  margin: 0;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+}
+
+main .craftBeer div:first-of-type .best {
+  font-size: 3rem;
+}
+
+main .craftBeer div:last-of-type {
+  margin-top: -2rem;
+}
+
+main .craftBeer div .orange {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Amatic SC", cursive;
+  color: #ffae13;
+  margin-top: 1.5rem;
+}
+
+main .craftBeer div p:first-of-type, main .craftBeer div p:last-of-type, main .craftBeer div p:nth-of-type(2) {
+  font-family: "Lato", sans-serif;
+  font-size: 28px;
+  text-align: center;
+}
+
+main .craftBeer div p:last-of-type {
+  font-family: "Amatic SC", cursive;
+}
+
+main .craftBeer div p a {
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+main .craftBeer div p a:hover {
+  color: #ffae13;
+}
+
+main .craftBeer .call {
+  color: white;
+  margin: 0;
+}
+
+main .parternship {
+  max-width: 500px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 45px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .parternship div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 45px;
+}
+
+main .parternship div img {
+  width: 13rem;
+}
+
+main .parternship div a {
+  text-transform: capitalize;
+  font-size: 18px;
+  margin-top: 1rem;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  color: black;
+}
+
+main .parternship div a:hover {
+  color: #ffae13;
+}
+
+main .listProduct {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+main .listProduct h2 {
+  text-align: center;
+  font-family: "Berkshire Swash", cursive;
+  font-size: 3rem;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+main .listProduct div {
+  margin: 6rem 0;
+}
+
+main .listProduct div:last-of-type {
+  padding-top: 3rem;
+}
+
+main .listProduct div:last-of-type a {
+  margin: 0;
+}
+
+main .listProduct div:last-of-type img {
+  margin-bottom: 2rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+main .listProduct div:last-of-type:hover img {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+main .listProduct div a {
+  font-family: "Amatic SC", cursive;
+  color: black;
+  font-size: 5rem;
+  font-weight: 100;
+  display: block;
+  text-align: center;
+  margin-top: -4rem;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  position: relative;
+  z-index: 1000;
+}
+
+main .listProduct div img {
+  display: block;
+  width: 13rem;
+  margin: 0 auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main .listProduct div:hover img {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+main .listProduct div:hover a {
+  color: #ffae13;
+}
+
+main .moreInformation {
+  background-image: url(https://ld-wp.template-help.com/wordpress_59005/wp-content/uploads/2016/09/index-9.jpg);
+  background-position: top center;
+  background-size: cover;
+  color: white;
+  height: 780px;
+}
+
+main .moreInformation > div {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+main .moreInformation > div p {
+  text-align: center;
+}
+
+main .moreInformation > div p:first-of-type {
+  text-align: center;
+  padding: 2rem 0;
+  margin: 0;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: "Berkshire Swash", cursive;
+}
+
+main .moreInformation > div .aboutGutenberg {
+  width: 9rem;
+  height: 9rem;
+}
+
+main .moreInformation > div h3 {
+  font-weight: normal;
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+}
+
+main .moreInformation > div ul li {
+  text-align: center;
+}
+
+main .moreInformation > div ul li:last-of-type {
+  padding-left: 4.8rem;
+}
+
+main .moreInformation > div ul li i {
+  margin-right: 1rem;
+  font-size: .6rem;
+}
+/*# sourceMappingURL=style.css.map */
