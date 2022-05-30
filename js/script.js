@@ -48,4 +48,5 @@ for (let i = 0; i < activeMenu.length; i++) {
         }
         console.log(activeMenu[i].parentElement.children[1].children)
     })
+    console.log(activeMenu[i].parentElement.children[1])
 }

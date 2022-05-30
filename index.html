@@ -1,215 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/7a994d3c9f.js" crossorigin="anonymous"></script>
-    <title>vin api</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7a994d3c9f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>beer and snack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Berkshire+Swash&family=Lato:wght@300;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/scss/style.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Berkshire+Swash&family=Lato:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/scss/style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <ul>
+      <ul class="allMedia">
+        <li>
+          <ul class="contactHeader">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>6087 Richmond hwy,
+              Alexandria, VA
+            </li>
+            <li>
+              <a href="tel:#"><i class="fa-solid fa-phone"></i>703 329 0632</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock-nine"></i>Mo-Fr 11:00-00:00, Sa-Su
+              15:00-00:00
+            </li>
+          </ul>
+          <ul class="flex media">
+            <li><a href="#">facebook</a></li>
+            <li><a href="#">twitter</a></li>
+            <li><a href="#">google +</a></li>
+            <li><a href="#">pinterest</a></li>
+          </ul>
+        </li>
+      </ul>
+      <nav>
+        <div class="flex gutenberg">
+          <div>
+            <img
+              src="https://ld-wp.template-help.com/wordpress_59005/wp-content/themes/gutenberg/assets/images/logo.png"
+              alt=""
+            />
+            <div class="activeMenuBurgerHeader"><span></span></div>
+          </div>
+          <ul class="hideMenuBurgerHeader menuBurgerHeader">
+            <li class="firstMenu">
+              <a href="#" class="activeMenu"
+                >about<i class="fa-solid fa-angle-down"></i
+              ></a>
+              <ul class="otherMenu none">
                 <li>
-                    <ul class="contactHeader">
-                        <li><i class="fa-solid fa-location-dot"></i>6087 Richmond hwy, Alexandria, VA</li>
-                        <li><a href="tel:#"><i class="fa-solid fa-phone"></i>703 329 0632</a></li>
-                        <li><i class="fa-solid fa-clock-nine"></i>Mo-Fr 11:00-00:00, Sa-Su 15:00-00:00</li>
-                    </ul>
-                    <ul class="flex media">
-                        <li><a href="#">facebook</a></li>
-                        <li><a href="#">twitter</a></li>
-                        <li><a href="#">google +</a></li>
-                        <li><a href="#">pinterest</a></li>
-                    </ul>
+                  <a href="#" class="activeMenu"
+                    >services<i class="fa-solid fa-angle-down"></i
+                  ></a>
+                  <ul class="none">
+                    <li><a href="#">craft beer tasting</a></li>
+                    <li><a href="#">local retail</a></li>
+                    <li><a href="#">sports events</a></li>
+                  </ul>
                 </li>
-            </ul>
-        </nav>
-        <nav>
-            <div class="flex gutenberg">
-                <div>
-                    <img src="https://ld-wp.template-help.com/wordpress_59005/wp-content/themes/gutenberg/assets/images/logo.png"
-                        alt="">
-                    <div class="activeMenuBurgerHeader"><span></span></div>
-                </div>
-                <ul class="hideMenuBurgerHeader menuBurgerHeader">
-                    <li class="firstMenu"><a href="#" class="activeMenu">about<i class="fa-solid fa-angle-down"></i></a>
-                        <ul class="otherMenu none">
-                            <li><a href="#" class="activeMenu">services<i class="fa-solid fa-angle-down"></i></a>
-                                <ul class="none">
-                                    <li><a href="#">craft beer tasting</a></li>
-                                    <li><a href="#">local retail</a></li>
-                                    <li><a href="#">sports events</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" class="activeMenu">team<i class="fa-solid fa-angle-down"></i></a>
-                                <ul class="none">
-                                    <li><a href="#">arnold lidke</a></li>
-                                    <li><a href="#">thomas flaherty</a></li>
-                                    <li><a href="#">jimmie o'murray</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">faq</a></li>
-                        </ul>
-                    </li>
-                    <li class="firstMenu"><a href="#" class="activeMenu">menu</a></li>
-                    <li class="firstMenu"><a href="#" class="activeMenu">media<i class="fa-solid fa-angle-down"></i></a>
-                        <ul class="otherMenu none">
-                            <li><a href="#">draf beer</a></li>
-                            <li><a href="#">snack menu</a></li>
-                            <li><a href="#">light beer</a></li>
-                            <li><a href="#">dark beer</a></li>
-                        </ul>
-                    </li>
-                    <li class="firstMenu"><a href="#" class="activeMenu">reservations</a></li>
-                    <li class="firstMenu"><a href="#" class="activeMenu">blog<i class="fa-solid fa-angle-down"></i></a>
-                        <ul class="otherMenu none">
-                            <li><a href="#" class="activeMenu">posts formats<i class="fa-solid fa-angle-down"></i></a>
-                                <ul class="none">
-                                    <li><a href="#">standard format</a></li>
-                                    <li><a href="#">image format</a></li>
-                                    <li><a href="#">video format</a></li>
-                                    <li><a href="#">gallery format</a></li>
-                                    <li><a href="#">quote format</a></li>
-                                    <li><a href="#">link format</a></li>
-                                    <li><a href="#">audio format</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" class="activeMenu">blog layout<i class="fa-solid fa-angle-down"></i></a>
-                                <ul class="none">
-                                    <li><a href="#">grid layout cols 1</a></li>
-                                    <li><a href="#">gid layout cols 2</a></li>
-                                    <li><a href="#">masonry layout 1</a></li>
-                                    <li><a href="#">masonry layout 2</a></li>
-                                    <li><a href="#">listing layout</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" class="activeMenu">sidebar settings<i
-                                        class="fa-solid fa-angle-down"></i></a>
-                                <ul class="none">
-                                    <li><a href="#">sidebar left</a></li>
-                                    <li><a href="#">sidebar right</a></li>
-                                    <li><a href="#">no sidebar</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="firstMenu"><a href="#" class="activeMenu">contacts</a></li>
-                    <li class="firstMenu"><a href="#" class="activeMenu">pages<i class="fa-solid fa-angle-down"></i></a>
-                        <ul class="otherMenu none">
-                            <li><a href="#" class="activeMenu">header settings<i class="fa-solid fa-angle-down"></i></a>
-                                <ul class="none">
-                                    <li><a href="#">header style 1</a></li>
-                                    <li><a href="#">header style 2</a></li>
-                                    <li><a href="#">header style 3</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" class="activeMenu">footer settings<i class="fa-solid fa-angle-down"></i></a>
-                                <ul class="none">
-                                    <li><a href="#">footer style 1</a></li>
-                                    <li><a href="#">footer style 2</a></li>
-                                    <li><a href="#">footer style 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">coming soon</a></li>
-                            <li><a href="#">statics element</a></li>
-                            <li><a href="#">typography</a></li>
-                            <li><a href="#">404</a></li>
-                            <li><a href="#">documentation</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                <li>
+                  <a href="#" class="activeMenu"
+                    >team<i class="fa-solid fa-angle-down"></i
+                  ></a>
+                  <ul class="none">
+                    <li><a href="#">arnold lidke</a></li>
+                    <li><a href="#">thomas flaherty</a></li>
+                    <li><a href="#">jimmie o'murray</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">faq</a></li>
+              </ul>
+            </li>
+            <li class="firstMenu"><a href="#" class="activeMenu">media</a></li>
+            <li class="firstMenu">
+              <a href="#" class="activeMenu"
+                >menu<i class="fa-solid fa-angle-down"></i
+              ></a>
+              <ul class="otherMenu none">
+                <li><a href="#">draft beer</a></li>
+                <li><a href="#">snack menu</a></li>
+                <li><a href="#">light beer</a></li>
+                <li><a href="#">dark beer</a></li>
+              </ul>
+            </li>
+            <li class="firstMenu">
+              <a href="#" class="activeMenu">reservations</a>
+            </li>
+            <li class="firstMenu">
+              <a href="#" class="activeMenu"
+                >blog<i class="fa-solid fa-angle-down"></i
+              ></a>
+              <ul class="otherMenu none">
+                <li>
+                  <a href="#" class="activeMenu"
+                    >posts formats<i class="fa-solid fa-angle-down"></i
+                  ></a>
+                  <ul class="none">
+                    <li><a href="#">standard format</a></li>
+                    <li><a href="#">image format</a></li>
+                    <li><a href="#">video format</a></li>
+                    <li><a href="#">gallery format</a></li>
+                    <li><a href="#">quote format</a></li>
+                    <li><a href="#">link format</a></li>
+                    <li><a href="#">audio format</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="activeMenu"
+                    >blog layout<i class="fa-solid fa-angle-down"></i
+                  ></a>
+                  <ul class="none">
+                    <li><a href="#">grid layout cols 1</a></li>
+                    <li><a href="#">grid layout cols 2</a></li>
+                    <li><a href="#">masonry layout 1</a></li>
+                    <li><a href="#">masonry layout 2</a></li>
+                    <li><a href="#">listing layout</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="activeMenu"
+                    >sidebar settings<i class="fa-solid fa-angle-down"></i
+                  ></a>
+                  <ul class="none">
+                    <li><a href="#">sidebar left</a></li>
+                    <li><a href="#">sidebar right</a></li>
+                    <li><a href="#">no sidebar</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="firstMenu">
+              <a href="#" class="activeMenu">contacts</a>
+            </li>
+            <li class="firstMenu">
+              <a href="#" class="activeMenu"
+                >pages<i class="fa-solid fa-angle-down"></i
+              ></a>
+              <ul class="otherMenu none">
+                <li>
+                  <a href="#" class="activeMenu"
+                    >header settings<i class="fa-solid fa-angle-down"></i
+                  ></a>
+                  <ul class="none">
+                    <li><a href="#">header style 1</a></li>
+                    <li><a href="#">header style 2</a></li>
+                    <li><a href="#">header style 3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="activeMenu"
+                    >footer settings<i class="fa-solid fa-angle-down"></i
+                  ></a>
+                  <ul class="none">
+                    <li><a href="#">footer style 1</a></li>
+                    <li><a href="#">footer style 2</a></li>
+                    <li><a href="#">footer style 2</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">coming soon</a></li>
+                <li><a href="#">statics element</a></li>
+                <li><a href="#">typography</a></li>
+                <li><a href="#">404</a></li>
+                <li><a href="#">documentation</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
-        <div class="container">
-            <div class="craftBeer">
-                <div>
-                    <p class="best">the best</p>
-                    <h1 class="uppercase"><span class="block">craft beer</span><span class="block">pub</span></h1>
-                    <div>
-                        <span class="orange block">welcomes you!</span>
-                        <p>We’ve got both craft & draft beers!</p>
-                        <p class="capitalize call">call: <a href="tel:#">(555)-123-4567</a></p>
-                        <p class="uppercase bookOnly"><span class="block">book</span><span>online</span></p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="craftBeer">
+          <div>
+            <p class="best">the best</p>
+            <h1 class="uppercase"><span>craft beer</span>pub</h1>
+            <div>
+              <span class="orange block">welcomes you!</span>
+              <p>We’ve got both craft & draft beers!</p>
+              <p class="capitalize call">
+                call: <a href="tel:#">(555)-123-4567</a>
+              </p>
+              <a href="#" class="uppercase bookOnly"
+                ><span class="block">book</span><span>online</span></a
+              >
             </div>
-            <div class="parternship">
-                <div>
-                    <img src="https://ld-wp.template-help.com/wordpress_59005/wp-content/uploads/2016/09/index-2.jpg"
-                        alt="">
-                    <a href="#">le cordon bleu</a>
-                </div>
-                <div>
-                    <img src="https://ld-wp.template-help.com/wordpress_59005/wp-content/uploads/2016/09/index-3.jpg"
-                        alt="">
-                    <a href="#">travelers choice</a>
-                </div>
-                <div>
-                    <img src="https://ld-wp.template-help.com/wordpress_59005/wp-content/uploads/2016/09/index-4.jpg"
-                        alt="">
-                    <a href="#">michelin guide</a>
-                </div>
-            </div>
-            <div class="listProduct">
-                <h2>gutenberg menu</h2>
-                <div>
-                    <a href="#"><img
-                            src="https://ld-wp.template-help.com/wordpress_59005/wp-content/uploads/2016/09/index-5-582x1170.jpg"
-                            alt=""></a>
-                    <a href="#">light beer</a>
-                </div>
-                <div>
-                    <a href="#"><img
-                            src="https://ld-wp.template-help.com/wordpress_59005/wp-content/uploads/2016/09/index-6-561x1170.jpg"
-                            alt=""></a>
-                    <a href="#">draft beer</a>
-                </div>
-                <div>
-                    <a href="#"><img src="https://ld-wp.template-help.com/wordpress_59005/wp-content/uploads/2016/09/index-7-582x1170.jpg
-                        " alt=""></a>
-                    <a href="#">dark beer</a>
-                </div>
-                <div>
-                    <a href="#"><img
-                            src="https://ld-wp.template-help.com/wordpress_59005/wp-content/uploads/2016/09/index-8-1170x896.jpg"
-                            alt=""></a>
-                    <a href="#">snack menu</a>
-                </div>
-            </div>
-            <div class="moreInformation">
-                <div>
-                    <p>gutenberg</p>
-                    <h3>The Ultimate Place <span class="italic">for</span>
-                        <spa class="bold">Craft Beers</spa>
-                    </h3>
-                    <p>Without any doubt, our brewery and a craft beer pub is the ultimate go-to location for any kind
-                        of a
-                        distinctively different beer.</p>
-                    <ul>
-                        <li><i class="fa-solid fa-star"></i>Dark Beers</li>
-                        <li><i class="fa-solid fa-star"></i>Light Beers</li>
-                        <li><i class="fa-solid fa-star"></i>Craft Beers</li>
-                        <li><i class="fa-solid fa-star"></i>Draft Beers</li>
-                        <li><i class="fa-solid fa-star"></i>Barleywine-styled Ales</li>
-                    </ul>
-                    <p class="bookOnly aboutGutenberg"><span>more about gutenberg</span></p>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="parternship">
+          <div>
+            <a href="#"
+              ><img
+                src="https://ld-wp.template-help.com/wordpress_59005/wp-content/uploads/2016/09/index-2.jpg"
+                alt=""
+              />le cordon bleu</a
+            >
+          </div>
+          <div>
+            <a href="#"
+              ><img
+                src="https://ld-wp.template-help.com/wordpress_59005/wp-content/uploads/2016/09/index-3.jpg"
+                alt=""
+              />travelers choice</a
+            >
+          </div>
+          <div>
+            <a href="#"
+              ><img
+                src="https://ld-wp.template-help.com/wordpress_59005/wp-content/uploads/2016/09/index-4.jpg"
+                alt=""
+              />michelin guide</a
+            >
+          </div>
+        </div>
+        <div class="listProduct">
+          <h2>gutenberg menu</h2>
+          <div>
+            <a href="#"
+              ><img
+                src="https://ld-wp.template-help.com/wordpress_59005/wp-content/uploads/2016/09/index-5-582x1170.jpg"
+                alt=""
+            /></a>
+            <a href="#">light beer</a>
+          </div>
+          <div>
+            <a href="#"
+              ><img
+                src="https://ld-wp.template-help.com/wordpress_59005/wp-content/uploads/2016/09/index-6-561x1170.jpg"
+                alt=""
+            /></a>
+            <a href="#">draft beer</a>
+          </div>
+          <div>
+            <a href="#"
+              ><img
+                src="https://ld-wp.template-help.com/wordpress_59005/wp-content/uploads/2016/09/index-7-582x1170.jpg
+                        "
+                alt=""
+            /></a>
+            <a href="#">dark beer</a>
+          </div>
+          <div>
+            <a href="#"
+              ><img
+                src="https://ld-wp.template-help.com/wordpress_59005/wp-content/uploads/2016/09/index-8-1170x896.jpg"
+                alt=""
+            /></a>
+            <a href="#">snack menu</a>
+          </div>
+        </div>
+        <div class="moreInformation">
+          <div>
+            <p>gutenberg</p>
+            <h3>
+              The Ultimate Place <span class="italic">for</span>
+              <spa class="bold">Craft Beers</spa>
+            </h3>
+            <p>
+              Without any doubt, our brewery and a craft beer pub is the
+              ultimate go-to location for any kind of a distinctively different
+              beer.
+            </p>
+            <ul>
+              <li><i class="fa-solid fa-star"></i>Dark Beers</li>
+              <li><i class="fa-solid fa-star"></i>Light Beers</li>
+              <li><i class="fa-solid fa-star"></i>Craft Beers</li>
+              <li><i class="fa-solid fa-star"></i>Draft Beers</li>
+              <li><i class="fa-solid fa-star"></i>Barleywine-styled Ales</li>
+            </ul>
+            <a href="#" class="bookOnly aboutGutenberg"
+              ><span>more about gutenberg</span></a
+            >
+          </div>
+        </div>
+      </div>
     </main>
     <script src="/js/script.js"></script>
-</body>
-
+  </body>
 </html>

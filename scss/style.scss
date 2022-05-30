@@ -80,13 +80,8 @@ img {
 
 header {
   background-color: $black-color;
-  nav {
-    &:first-of-type {
-      border-bottom: 1px solid #1c1c1c;
-    }
-    .contactHeader {
-      display: none;
-    }
+  .allMedia {
+    border-bottom: 1px solid #1c1c1c;
     .media {
       justify-content: space-around;
       max-width: 300px;
@@ -103,6 +98,11 @@ header {
         }
       }
     }
+    .contactHeader {
+      display: none;
+    }
+  }
+  nav {
     &:last-of-type {
       div.gutenberg {
         position: relative;
@@ -234,7 +234,7 @@ header {
   text-align: center;
   &::before {
     content: "";
-    display: block;
+    display: ² block;
     transform: scale(1);
     width: 100%;
     height: 100%;
@@ -277,8 +277,13 @@ main {
     background-position: center;
     padding: 70px 0;
     > div {
-      max-width: 500px;
+      max-width: 576px;
       margin: 0 auto;
+      h1 {
+        span {
+          margin-right: 2rem;
+        }
+      }
     }
     h1 {
       line-height: 1;
@@ -326,7 +331,7 @@ main {
           font-size: 28px;
           text-align: center;
         }
-        &:last-of-type {
+        &:last-of-type:not(.call) {
           font-family: $font-title;
         }
         a {
@@ -357,8 +362,11 @@ main {
       margin-bottom: 45px;
       img {
         width: 13rem;
+        margin-bottom: 2rem;
       }
       a {
+        display: flex;
+        flex-direction: column;
         text-transform: capitalize;
         font-size: 18px;
         margin-top: 1rem;
@@ -427,10 +435,10 @@ main {
   }
   .moreInformation {
     background-image: url(https://ld-wp.template-help.com/wordpress_59005/wp-content/uploads/2016/09/index-9.jpg);
-      background-position: top center;
-      background-size: cover;
-      color: $white-color;
-      height: 780px;
+    background-position: top center;
+    background-size: cover;
+    color: $white-color;
+    height: 780px;
     > div {
       max-width: 350px;
       margin: 0 auto;
@@ -464,7 +472,7 @@ main {
           }
           i {
             margin-right: 1rem;
-            font-size: .6rem;
+            font-size: 0.6rem;
           }
         }
       }
