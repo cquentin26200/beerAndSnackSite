@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -76,22 +77,18 @@ header {
   background-color: black;
 }
 
-header nav:first-of-type {
+header .allMedia {
   border-bottom: 1px solid #1c1c1c;
 }
 
-header nav .contactHeader {
-  display: none;
-}
-
-header nav .media {
+header .allMedia .media {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   max-width: 300px;
   margin: 0 auto;
 }
 
-header nav .media li a {
+header .allMedia .media li a {
   color: #bdbdbd;
   font-size: 0.75rem;
   font-weight: 600;
@@ -99,8 +96,12 @@ header nav .media li a {
   transition: color 0.25s ease;
 }
 
-header nav .media li a:hover {
+header .allMedia .media li a:hover {
   color: white;
+}
+
+header .allMedia .contactHeader {
+  display: none;
 }
 
 header nav:last-of-type div.gutenberg {
@@ -261,7 +262,7 @@ header nav:last-of-type div.gutenberg > div {
 
 .bookOnly::before {
   content: "";
-  display: block;
+  display: ² block;
   -webkit-transform: scale(1);
           transform: scale(1);
   width: 100%;
@@ -312,8 +313,12 @@ main .craftBeer {
 }
 
 main .craftBeer > div {
-  max-width: 500px;
+  max-width: 576px;
   margin: 0 auto;
+}
+
+main .craftBeer > div h1 span {
+  margin-right: 2rem;
 }
 
 main .craftBeer h1 {
@@ -359,7 +364,7 @@ main .craftBeer div p:first-of-type, main .craftBeer div p:last-of-type, main .c
   text-align: center;
 }
 
-main .craftBeer div p:last-of-type {
+main .craftBeer div p:last-of-type:not(.call) {
   font-family: "Amatic SC", cursive;
 }
 
@@ -408,6 +413,7 @@ main .parternship div {
 
 main .parternship div img {
   width: 13rem;
+  margin-bottom: 2rem;
 }
 
 main .parternship div a {
@@ -550,6 +556,6 @@ main .moreInformation > div ul li:last-of-type {
 
 main .moreInformation > div ul li i {
   margin-right: 1rem;
-  font-size: .6rem;
+  font-size: 0.6rem;
 }
 /*# sourceMappingURL=style.css.map */

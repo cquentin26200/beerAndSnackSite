@@ -51,5 +51,4 @@ for (let i = 0; i < activeMenu.length; i++) {
     })
 }
 
-console.log(document.body.parentNode.parentNode)
 
