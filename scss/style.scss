@@ -359,6 +359,8 @@ main {
         width: 13rem;
       }
       a {
+        display: flex;
+        flex-direction: column;
         text-transform: capitalize;
         font-size: 18px;
         margin-top: 1rem;
@@ -366,6 +368,9 @@ main {
         color: $black-color;
         &:hover {
           color: $secondary-color;
+        }
+        img {
+          margin-bottom: 1rem;
         }
       }
     }

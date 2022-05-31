@@ -43,9 +43,13 @@ for (let i = 0; i < activeMenu.length; i++) {
     activeMenu[i].addEventListener("click", () => {
         if (activeMenu[i].parentElement.children[1].classList.contains("none")) {
             activeMenu[i].parentElement.children[1].classList.replace("none", ["block"]);
+            activeMenu[i].parentElement.children[0].children[0].classList.replace("fa-angle-down", ["fa-angle-up"]);
         } else {
             activeMenu[i].parentElement.children[1].classList.replace("block", ["none"]);
+            activeMenu[i].parentElement.children[0].children[0].classList.replace("fa-angle-up", ["fa-angle-down"]);
         }
-        console.log(activeMenu[i].parentElement.children[1].children)
     })
 }
+
+console.log(document.body.parentNode.parentNode)
+

@@ -411,6 +411,13 @@ main .parternship div img {
 }
 
 main .parternship div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-transform: capitalize;
   font-size: 18px;
   margin-top: 1rem;
@@ -421,6 +428,10 @@ main .parternship div a {
 
 main .parternship div a:hover {
   color: #ffae13;
+}
+
+main .parternship div a img {
+  margin-bottom: 1rem;
 }
 
 main .listProduct {
