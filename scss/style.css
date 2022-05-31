@@ -346,10 +346,6 @@ main .craftBeer div:first-of-type .best {
   font-size: 3rem;
 }
 
-main .craftBeer div:last-of-type {
-  margin-top: -2rem;
-}
-
 main .craftBeer div .orange {
   text-align: center;
   font-size: 3rem;
@@ -385,11 +381,11 @@ main .craftBeer .call {
 
 main .parternship {
   max-width: 500px;
+  padding-top: 45px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 45px 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -408,7 +404,7 @@ main .parternship div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
 }
 
 main .parternship div img {
@@ -451,14 +447,15 @@ main .listProduct h2 {
   font-size: 3rem;
   font-weight: normal;
   text-transform: capitalize;
+  margin-top: 0;
 }
 
 main .listProduct div {
-  margin: 6rem 0;
+  margin: 2rem 0;
 }
 
 main .listProduct div:last-of-type {
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
 
 main .listProduct div:last-of-type a {
@@ -483,11 +480,14 @@ main .listProduct div a {
   font-weight: 100;
   display: block;
   text-align: center;
-  margin-top: -4rem;
   -webkit-transition: 0.25s;
   transition: 0.25s;
   position: relative;
   z-index: 1000;
+}
+
+main .listProduct div a:last-of-type {
+  margin-top: -4rem;
 }
 
 main .listProduct div img {
@@ -548,6 +548,7 @@ main .moreInformation > div h3 {
 
 main .moreInformation > div ul li {
   text-align: center;
+  text-transform: capitalize;
 }
 
 main .moreInformation > div ul li:last-of-type {

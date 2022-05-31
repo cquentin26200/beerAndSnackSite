@@ -311,9 +311,6 @@ main {
           font-size: 3rem;
         }
       }
-      &:last-of-type {
-        margin-top: -2rem;
-      }
     }
     div {
       .orange {
@@ -350,16 +347,16 @@ main {
   }
   .parternship {
     max-width: 500px;
+    padding-top: 45px;
     margin: 0 auto;
     display: flex;
-    padding: 45px 0;
     flex-direction: column;
     div {
       display: flex;
       flex-direction: column;
       text-align: center;
       align-items: center;
-      margin-bottom: 45px;
+      margin-bottom: 30px;
       img {
         width: 13rem;
         margin-bottom: 2rem;
@@ -390,11 +387,12 @@ main {
       font-size: 3rem;
       font-weight: normal;
       text-transform: capitalize;
+      margin-top: 0;
     }
     div {
-      margin: 6rem 0;
+      margin: 2rem 0;
       &:last-of-type {
-        padding-top: 3rem;
+        padding-top: 5rem;
         a {
           margin: 0;
         }
@@ -415,10 +413,12 @@ main {
         font-weight: 100;
         display: block;
         text-align: center;
-        margin-top: -4rem;
         transition: 0.25s;
         position: relative;
         z-index: 1000;
+        &:last-of-type {
+          margin-top: -4rem;
+        }
       }
       img {
         display: block;
@@ -470,6 +470,7 @@ main {
       ul {
         li {
           text-align: center;
+          text-transform: capitalize;
           &:last-of-type {
             padding-left: 4.8rem;
           }

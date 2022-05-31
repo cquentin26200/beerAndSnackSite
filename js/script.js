@@ -39,16 +39,10 @@ activeMenuBurgerHeader.addEventListener("click", showHideMenuBurgerHeader);
 
 const activeMenu = document.querySelectorAll(".activeMenu");
 
-for (let i = 0; i < activeMenu.length; i++) {
-    activeMenu[i].addEventListener("click", () => {
-        if (activeMenu[i].parentElement.children[1].classList.contains("none")) {
-            activeMenu[i].parentElement.children[1].classList.replace("none", ["block"]);
-            activeMenu[i].parentElement.children[0].children[0].classList.replace("fa-angle-down", ["fa-angle-up"]);
-        } else {
-            activeMenu[i].parentElement.children[1].classList.replace("block", ["none"]);
-            activeMenu[i].parentElement.children[0].children[0].classList.replace("fa-angle-up", ["fa-angle-down"]);
-        }
+for (let activeMenus of activeMenu) {
+    activeMenus.addEventListener("click", () => {
+        activeMenus.parentElement.children[1].classList.toggle("none");
+        activeMenus.parentElement.children[0].children[0].classList.toggle("fa-angle-down");
+        activeMenus.parentElement.children[0].children[0].classList.toggle("fa-angle-up");
     })
 }
-
-
