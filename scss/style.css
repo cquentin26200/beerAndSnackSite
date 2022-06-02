@@ -450,10 +450,6 @@ main .listProduct h2 {
   margin-top: 0;
 }
 
-main .listProduct div {
-  margin: 2rem 0;
-}
-
 main .listProduct div:last-of-type {
   padding-top: 5rem;
 }
@@ -512,7 +508,7 @@ main .moreInformation {
   background-position: top center;
   background-size: cover;
   color: white;
-  height: 780px;
+  height: 800px;
 }
 
 main .moreInformation > div {
@@ -526,7 +522,7 @@ main .moreInformation > div p {
 
 main .moreInformation > div p:first-of-type {
   text-align: center;
-  padding: 2rem 0;
+  padding: 4rem 0 2rem 0;
   margin: 0;
   font-size: 2rem;
   text-transform: capitalize;
@@ -558,5 +554,21 @@ main .moreInformation > div ul li:last-of-type {
 main .moreInformation > div ul li i {
   margin-right: 1rem;
   font-size: 0.6rem;
+}
+
+main .craft {
+  text-align: center;
+}
+
+main .craft h4 {
+  font-size: 3rem;
+  font-family: "Berkshire Swash", cursive;
+  font-weight: 100;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+main .craft > p {
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
